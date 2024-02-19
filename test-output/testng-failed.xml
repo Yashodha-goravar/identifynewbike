@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestCase.TC01_HomePage">
+        <methods>
+          <include name="homepage"/>
+          <include name="setUpEnvi"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.TC01_HomePage -->
+      <class name="TestCase.TC04_LoginPage">
+        <methods>
+          <include name="errorMessage"/>
+          <include name="setUpEnvi"/>
+          <include name="LoginPageInHome"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.TC04_LoginPage -->
+      <class name="TestCase.TC03_UsedCars">
+        <methods>
+          <include name="location"/>
+          <include name="setUpEnvi"/>
+          <include name="brandAvailable"/>
+          <include name="hoverOnUsedCars"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.TC03_UsedCars -->
+      <class name="TestCase.TC02_UpcomingBikes">
+        <methods>
+          <include name="ManufacturerDrpDown"/>
+          <include name="bikeDetails"/>
+          <include name="setUpEnvi"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.TC02_UpcomingBikes -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
